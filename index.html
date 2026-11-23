@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>아르떼스피치 운영 인수인계 시스템</title>
+<style>
+  :root{
+    --bg:#f6f5f2;
+    --card-bg:#ffffff;
+    --ink:#2b2b28;
+    --sub:#6b6a66;
+    --line:#e7e5df;
+    --accent:#a6592f;
+    --accent-soft:#f3e3d6;
+    --warn-bg:#fdecec;
+    --warn-line:#d9534f;
+    --warn-ink:#8a2b26;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.55;
+  }
+  .wrap{max-width:1040px;margin:0 auto;padding:48px 24px 80px;}
+  header{margin-bottom:36px;}
+  .eyebrow{
+    display:inline-block;
+    font-size:13px;
+    font-weight:600;
+    color:var(--accent);
+    background:var(--accent-soft);
+    padding:4px 10px;
+    border-radius:999px;
+    margin-bottom:14px;
+    letter-spacing:0.02em;
+  }
+  h1{font-size:28px;margin:0 0 10px;font-weight:800;letter-spacing:-0.01em;}
+  .lead{color:var(--sub);font-size:15px;max-width:680px;margin:0 0 18px;}
+  .howto{
+    background:var(--card-bg);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:18px 20px;
+    font-size:14px;
+    color:var(--ink);
+  }
+  .howto strong{color:var(--accent);}
+  .howto ol{margin:8px 0 0;padding-left:20px;}
+  .howto li{margin-bottom:4px;}
+  .folder-link{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    margin-top:14px;
+    font-size:13.5px;
+    color:var(--accent);
+    text-decoration:none;
+    font-weight:600;
+  }
+  .folder-link:hover{text-decoration:underline;}
+
+  section.group{margin-top:38px;}
+  .group-title{
+    font-size:13px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--sub);
+    margin-bottom:14px;
+    padding-bottom:8px;
+    border-bottom:1px solid var(--line);
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+    gap:14px;
+  }
+  .card{
+    background:var(--card-bg);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:18px;
+    text-decoration:none;
+    color:var(--ink);
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  }
+  .card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
+    border-color:#d8d4cb;
+  }
+  .card .icon{font-size:22px;}
+  .card .title{font-size:15px;font-weight:700;}
+  .card .desc{font-size:13px;color:var(--sub);flex-grow:1;}
+  .card .cta{font-size:12.5px;font-weight:600;color:var(--accent);}
+
+  .card.secure{
+    background:var(--warn-bg);
+    border:1px solid #f3c8c6;
+  }
+  .card.secure .title{color:var(--warn-ink);}
+  .card.secure .cta{color:var(--warn-line);}
+
+  footer{
+    margin-top:56px;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+    font-size:12.5px;
+    color:var(--sub);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="eyebrow">운영팀 인수인계 시스템</span>
+    <h1>아르떼스피치 운영 인수인계 시스템</h1>
+    <p class="lead">운영팀 업무를 카테고리별로 정리한 허브 페이지입니다. 아래 카드를 누르면 각 항목의 구글독스 문서로 이동해요. 실제 문서는 구글독스이기 때문에, 운영 방식이 바뀌면 문서를 열어서 그 자리에서 바로 수정하면 됩니다 (따로 저장 버튼 없이 자동 저장).</p>
+
+    <div class="howto">
+      <strong>📌 이렇게 사용하세요</strong>
+      <ol>
+        <li>새로 오신 분은 위에서부터 순서대로 한 번씩 읽어보세요.</li>
+        <li>일하다가 내용이 실제와 다르면, 해당 문서를 열어 <strong>바로 그 자리에서 수정</strong>해주세요. 누가 고쳐도 됩니다.</li>
+        <li>이 허브 페이지 자체(카드 목록)를 바꾸고 싶다면 원장님께 말씀해주세요.</li>
+      </ol>
+    </div>
+    <a class="folder-link" href="https://drive.google.com/drive/folders/1vUDrQ18IsmAfPc49ujC0YoOkEbFjkELL" target="_blank" rel="noopener">📁 구글드라이브 폴더 전체 보기 →</a>
+  </header>
+
+  <section class="group">
+    <div class="group-title">매일 업무</div>
+    <div class="grid">
+      <a class="card" href="https://docs.google.com/document/d/1hSVPKORmWcY6c92ZpsmozXTE6cdawg5mEOFDBpDGIX4/edit" target="_blank" rel="noopener">
+        <div class="icon">🌤️</div>
+        <div class="title">01. 기본 업무 매뉴얼</div>
+        <div class="desc">출퇴근 루틴, 복장, 모르면 무조건 질문하기 원칙</div>
+        <div class="cta">문서 열기 →</div>
+      </a>
+      <a class="card" href="https://docs.google.com/document/d/10Mwe_ygSwI7X9WS--N-QR37089vQWidI-lMtg466UF0/edit" target="_blank" rel="noopener">
+        <div class="icon">🗓️</div>
+        <div class="title">02. 수업 스케줄 · 예약 관리</div>
+        <div class="desc">스케줄 정리, 예약 절차, 강사별 가능과목, 매니저 사용법</div>
+        <div class="cta">문서 열기 →</div>
+      </a>
+      <a class="card" href="https://docs.google.com/document/d/1-SASy7PI1UKm46ToDH_X05WEeZ2IsTq63mmSWJWbG0s/edit" target="_blank" rel="noopener">
+        <div class="icon">🎯</div>
+        <div class="title">03. 상담 가이드 (면접 상담기법)</div>
+        <div class="desc">공무원·임용·대입·단기속성·쇼호스트 등 상담 답변법</div>
+        <div class="cta">문서 열기 →</div>
+      </a>
+      <a class="card" href="https://docs.google.com/document/d/1_v0GiQzHIENSDxmoz76_du7dOB59snSwIrtLTSDnFUc/edit" target="_blank" rel="noopener">
+        <div class="icon">💬</div>
+        <div class="title">04. 학생 · 학부모 소통 가이드</div>
+        <div class="desc">카톡 응대, 첫 수업·보강 안내, 신규 원서·결제, 창원 전자원서</div>
+        <div class="cta">문서 열기 →</div>
+      </a>
+      <a class="card" href="https://docs.google.com/document/d/1Ry8tnaHQVLjKH00-3gvAs7jbfYrtB9Z_TpPY5Hb9eD0/edit" target="_blank" rel="noopener">
+        <div class="icon">📝</div>
+        <div class="title">05. 문구모음집</div>
+        <div class="desc">자주 쓰는 안내 문구 모음</div>
+        <div class="cta">문서 열기 →</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="group">
+    <div class="group-title">운영 · 서류</div>
+    <div class="grid">
+      <a class="card" href="https://docs.google.com/document/d/1RFzPRDYVY52QtHUS4HjEBst5Uy7n5RQHvfACWpQUnj8/edit" target="_blank" rel="noopener">
+        <div class="icon">💳</div>
+        <div class="title">06. 결제 · 환불 · 서류 관리</div>
+        <div class="desc">입학원서, 영수증, 퇴원생 처리, 환불 규정</div>
+        <div class="cta">문서 열기 →</div>
+      </a>
+      <a class="card" href="https://docs.google.com/document/d/1TZvUvPxJmvgjaMssYcq9EgVolAQF6UsmpLbg_DnILN8/edit" target="_blank" rel="noopener">
+        <div class="icon">🎤</div>
+        <div class="title">07. 그룹수업 · 전문가과정 준비</div>
+        <div class="desc">그룹수업 세팅 체크리스트, 쇼호스트 · 아나운서과정 등</div>
+        <div class="cta">문서 열기 →</div>
+      </a>
+      <a class="card" href="https://docs.google.com/document/d/1_8Irx_rh95v0std83tNhRuoazFIhGLfc8mcdcZDftLU/edit" target="_blank" rel="noopener">
+        <div class="icon">👩‍🏫</div>
+        <div class="title">08. 강사 관리</div>
+        <div class="desc">강사일지, 교재 준비, 범죄경력회보서, 법정의무교육</div>
+        <div class="cta">문서 열기 →</div>
+      </a>
+      <a class="card" href="https://docs.google.com/document/d/1_wwJD9RSwjPFBjo3SaXxYaoz2y4101-Ok0f2hKmeJkM/edit" target="_blank" rel="noopener">
+        <div class="icon">🧹</div>
+        <div class="title">09. 학원 시설 관리</div>
+        <div class="desc">청소, 비품 위치, 마감 체크리스트, 프린트 · 스캔 방법</div>
+        <div class="cta">문서 열기 →</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="group">
+    <div class="group-title">정기 업무 · 마케팅</div>
+    <div class="grid">
+      <a class="card" href="https://docs.google.com/document/d/1Vr338PRzIjNpcwRnS6cTJuo7QCpZ7ssp6mCFRShQnOM/edit" target="_blank" rel="noopener">
+        <div class="icon">✅</div>
+        <div class="title">10. 월간 정기 업무 체크리스트</div>
+        <div class="desc">월말 구글시트 정리, 양산점 피드백, 합격증 만들기</div>
+        <div class="cta">문서 열기 →</div>
+      </a>
+      <a class="card" href="https://docs.google.com/document/d/1orvg6OV0ZmYlGj47NDI1zB-0YiLO2GlkzRjjBG-eShA/edit" target="_blank" rel="noopener">
+        <div class="icon">📣</div>
+        <div class="title">11. 마케팅 · 온라인 관리</div>
+        <div class="desc">홈페이지, 블로그, 인포크링크, 온라인 모니터링</div>
+        <div class="cta">문서 열기 →</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="group">
+    <div class="group-title">지점</div>
+    <div class="grid">
+      <a class="card" href="https://docs.google.com/document/d/1ynBK42H5t84sOJrAH6FGICkPI9rOk24vXGF74mssbsI/edit" target="_blank" rel="noopener">
+        <div class="icon">🎭</div>
+        <div class="title">12. 에이블 지점 안내</div>
+        <div class="desc">에이블 지점 운영 안내</div>
+        <div class="cta">문서 열기 →</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="group">
+    <div class="group-title">보안</div>
+    <div class="grid">
+      <a class="card secure" href="https://docs.google.com/document/d/1KOuTzzV0861LHfZGZwbxfzpf7IC0V6kjZ0tgyfFuTJg/edit" target="_blank" rel="noopener">
+        <div class="icon">🔒</div>
+        <div class="title">13. 계정 정보 (비밀번호)</div>
+        <div class="desc">각종 서비스 로그인 정보 — 꼭 필요한 인원에게만 공유하세요</div>
+        <div class="cta">문서 열기 →</div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    아르떼스피치 운영 인수인계 시스템 · 최초 작성일 2026-08-19 · 최종 수정 2026-11-23 · 문의: 원장님
+  </footer>
+
+</div>
+</body>
+</html>
